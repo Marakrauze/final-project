@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: gray;
+}
+
+.fade-in {
+	animation: fadeIn 2s;
+  	opacity: 1;
+}
+
+/* class flex-center */
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login and register box */
+.box {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: 0;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 15px;    
+}
+
+.headingIndex {
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: gray;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.choseOne {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.switchBtn {
+    width: 100px;
+    height: 50px;
+    padding: 0px;
+    margin: 10px;
+    border: 0;
+    border-radius: 9px;
+    background-color: cornflowerblue;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.inputStyle {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 9px;
+    box-shadow:0 0 6px 3px rgb(187, 187, 187);
+    box-sizing: border-box;
+}
+
+.submitBtn {
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-radius: 9px;
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* //remove button outline// */
+*:focus {
+    outline:none !important
+}
+
+.switchBtn:hover, .submitBtn:hover, .btnList:hover, .btn:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24);
+}
+
+/* //navigacija// */
+nav {
+    display: flex;
+    background-color: cornflowerblue;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;  
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.link-section {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.linkdec {
+    text-decoration: none;
+    color: white;
+}
+
+.linkdec:hover {
+    text-decoration-line: underline;
+}
+
+.line {
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.logo {
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.logout {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.logout:hover {
+    text-decoration-line: underline;
+}
+
+/* //wrapper for home and list// */
+.wrapper {
+    width: 100vw;
+    height: 80vh;
+}
+
+/* //home card// */
+.cardContent {
+    width: 60vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 15px 0px rgba(0,0,0,0.24);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+}
+
+.headingCard {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: gray;
+}
+
+/* //span eror style// */
+.error {
+    display: inline-block;
+    color: rgb(226, 31, 31);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.register {
+    display: inline-block;
+    color: rgb(226, 31, 31);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* ///to do list /// */
+.list {
+    width: 40%;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 15px 0px rgba(0,0,0,0.24);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+}
+
+.listHeader {
+    padding: 20px;
+}
+
+.btnList{
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    border-radius: 9px;
+    background-color: #8E49E8; 
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.inputStyleList {
+    width: 35vw;
+    padding: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 9px;
+    box-shadow:0 0 6px 3px rgb(187, 187, 187);
+}
+
+table {
+    width: 35vw;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+td {
+    max-width: 25vw;
+    border: none;
+    height: 30px;
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+.delete, .edit {
+    text-align: center;
+
+}
+
+.delete a, .edit a  {
+    color: white;
+    background: #8E49E8;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+/* ///profile// */
+.wrapperProfile {
+    width: 100vw;
+    height: 80vh;
+}
+
+.inputFields {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 15px 0px rgba(0,0,0,0.24);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn {
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    border-radius: 9px;
+    background-color: #8E49E8;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    padding: 10px;
+}
+
+/* //media screen responsive// */
+
+@media only screen and (max-width: 800px) {
+    .link-section {
+    display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
